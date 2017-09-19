@@ -8,12 +8,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("bEAnS.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("file:src/main/java/com/tutorialspoint/Beans.xml");
         HelloWorld objA = (HelloWorld) context.getBean("id");
-        objA.setMessage("I'm object A");
         objA.getMessage();
 
-        HelloWorld objB = (HelloWorld) context.getBean("id");
-        objB.getMessage();
     }
 }
