@@ -1,4 +1,4 @@
-package com.configuration;
+package com.configuration.demo;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -11,7 +11,7 @@ public class MainApp {
         ApplicationContext ctx =
                 new AnnotationConfigApplicationContext(HelloWorldConfig.class);
 
-        HelloWorld1 helloWorld = ctx.getBean(HelloWorld1.class);
+        HelloWorld helloWorld = ctx.getBean(HelloWorld.class);
         helloWorld.setMessage("Hello World!");
         helloWorld.getMessage();
     }

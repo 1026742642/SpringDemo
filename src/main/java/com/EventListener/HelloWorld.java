@@ -1,9 +1,9 @@
-package com.configuration;
+package com.EventListener;
 
 /**
- * Created by lenovo on 2017/9/19.
+ * Created by lenovo on 2017/9/21.
  */
-public class HelloWorld1 {
+public class HelloWorld {
     private String message;
 
     public void setMessage(String message){

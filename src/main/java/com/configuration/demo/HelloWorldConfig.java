@@ -1,4 +1,4 @@
-package com.configuration;
+package com.configuration.demo;
 import org.springframework.context.annotation.*;
 /**
  * Created by lenovo on 2017/9/19.
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.*;
 @Configuration
 public class HelloWorldConfig {
     @Bean
-    public HelloWorld1 helloWorld(){
-        return new HelloWorld1();
+    public HelloWorld helloWorld(){
+        return new HelloWorld();
     }
 }
