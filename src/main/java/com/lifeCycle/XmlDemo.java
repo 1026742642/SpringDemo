@@ -12,10 +12,10 @@ public class XmlDemo {
     public void getMessage(){
         System.out.println("Your Message : " + message);
     }
-    public void init(){
+    public void myInit(){
         System.out.println("Bean is going through init by xml");
     }
-    public void destroy(){
+    public void myDestroy(){
         System.out.println("Bean will destroy by xml");
     }
 }
