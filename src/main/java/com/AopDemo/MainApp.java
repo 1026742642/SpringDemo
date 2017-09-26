@@ -11,6 +11,9 @@ public class MainApp {
         ApplicationContext context = new ClassPathXmlApplicationContext("file:src/main/java/com/AopDemo/Beans.xml");
 
         Student student = (Student) context.getBean("student");
+//        Student student = new Student();
+//        student.setAge(12);
+//        student.setName("zerofire");
         student.getName();
         student.getAge();
         student.printThrowException();
